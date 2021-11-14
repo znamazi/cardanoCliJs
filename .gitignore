@@ -1,0 +1,5 @@
+node_modules/
+tmp/
+priv/
+media/
+package-lock.json
