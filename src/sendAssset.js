@@ -39,33 +39,15 @@ const sendAsset = (walletName, receiver, minAda, tokenName, amount) => {
     ]
   }
 
-  // console.log(JSON.stringify(txInfo, undefined, 2))
-  // // 3. build the transaction
-
-  // const raw = cardano.transactionBuildRaw(txInfo)
-
-  // // 4. calculate the fee
-
-  // const fee = cardano.transactionCalculateMinFee({
-  //   ...txInfo,
-  //   txBody: raw,
-  //   witnessCount: 1
-  // })
-  // console.log(fee)
-
-  // // 5. pay the fee by subtracting it from the sender utxo
-
-  // txInfo.txOut[0].value.lovelace -= fee
-
-  // 6. build the final transaction
+  // 4. build the final transaction
 
   const tx = buildTransaction(txInfo)
 
-  // 7. sign the transaction
+  // 5. sign the transaction
 
   const txSigned = signTransaction(walletName, tx)
 
-  // 8. submit the transaction
+  // 6.. submit the transaction
 
   const txHash = submitTransaction(txSigned)
 

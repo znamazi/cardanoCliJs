@@ -1,5 +1,9 @@
 # cardanoCliJs
 
-npm install
+## npm install
 
-node src/index.js
+# Frist time run createWallet and fund it
+
+        ## node src/createWallet.js
+
+## node src/index.js
