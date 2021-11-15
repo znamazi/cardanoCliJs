@@ -1,9 +1,11 @@
-# cardanoCliJs
+## Getting Started
 
-## npm install
+Install packages: `npm install`
 
 # Frist time run createWallet and fund it
 
-        ## node src/createWallet.js
+        node src/createWallet.js
 
-## node src/index.js
+# For mint or send run
+
+        node src/index.js
